@@ -27,6 +27,15 @@ public class Fraccion {
 
 
     }
+    public Fraccion multi(Fraccion a) {
+        int cont1 = a.numerador * this.numerador;
+        int cont2 = this.denominador * a.denominador;
+
+        Fraccion f = new Fraccion(cont1, cont2);
+        return f;
+
+
+    }
 
     public void mostrar() {
         System.out.print(numerador + "/" + denominador);
